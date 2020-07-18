@@ -1,7 +1,8 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
+import SearchScreen from './src/screens/SearchScreen'
 
-import SearchScreen from './src/screens/SearchScreen';
+require('dotenv').config()
 
 const navigator = createStackNavigator(
   {
@@ -13,6 +14,6 @@ const navigator = createStackNavigator(
       title: 'Business Search',
     },
   }
-);
+)
 
-export default createAppContainer(navigator);
+export default createAppContainer(navigator)
