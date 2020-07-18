@@ -1,8 +1,9 @@
 import axios from 'axios'
+import { API_KEY, BASE_URL } from '@env'
 
 export default axios.create({
-  baseURL: process.env.BASE_URL,
+  baseURL: BASE_URL,
   headers: {
-    Autorization: `Bearer ${process.env.API_KEY}`,
+    Authorization: `Bearer ${API_KEY}`,
   },
 })
