@@ -24,6 +24,7 @@ const SearchScreen = () => {
   })
 
   function filterRestaurantsByPrice(result, index) {
+    console.log(result)
     const filter = index === 0 ? '$' : index === 1 ? '$$' : '$$$'
     return result.filter((restaurant) => {
       return restaurant.price === filter
